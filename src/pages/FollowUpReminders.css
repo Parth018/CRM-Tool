@@ -1,0 +1,125 @@
+/* FollowUpReminders.css */
+
+.follow-up-reminders {
+  font-family: 'Roboto', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.follow-up-reminders h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.follow-up-reminders input,
+.follow-up-reminders select {
+  width: calc(50% - 12px);
+  padding: 10px;
+  margin: 10px 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.follow-up-reminders input[type='text'],
+.follow-up-reminders input[type='email'],
+.follow-up-reminders input[type='tel'],
+.follow-up-reminders input[type='number'] {
+  width: calc(50% - 12px);
+}
+
+.follow-up-reminders input[type='text']::placeholder,
+.follow-up-reminders input[type='email']::placeholder,
+.follow-up-reminders input[type='tel']::placeholder,
+.follow-up-reminders input[type='number']::placeholder {
+  font-style: italic;
+  color: #aaa;
+}
+
+.follow-up-reminders button {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.follow-up-reminders button:hover {
+  background-color: #0056b3;
+}
+
+.follow-up-reminders ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.follow-up-reminders li {
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.follow-up-reminders li span {
+  margin-right: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.follow-up-reminders li button {
+  width: auto;
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.follow-up-reminders li button:hover {
+  background-color: #c82333;
+}
+
+.follow-up-reminders li button:last-child {
+  background-color: #28a745;
+}
+
+.follow-up-reminders li button:last-child:hover {
+  background-color: #218838;
+}
+
+.follow-up-reminders p {
+  text-align: center;
+  color: #888;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .follow-up-reminders input,
+  .follow-up-reminders select,
+  .follow-up-reminders button {
+    width: calc(100% - 22px);
+  }
+}

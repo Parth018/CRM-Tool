@@ -1,0 +1,60 @@
+.signup-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #140101;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(1, 2, 1, 1);
+  background: linear-gradient(135deg, #530707, #096897, #283048, #790808);
+/* Gradient background */
+}
+
+.signup-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px; /* Optional: Adjusting font size */
+  color: #fff; /* Adjust text color for better readability on gradient background */
+}
+
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-container .form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-container label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px; /* Optional: Adjusting font size */
+  color: #fff; /* Adjust text color for better readability */
+}
+
+.signup-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.signup-container button {
+  padding: 10px;
+  background-color: #f8f4f4;
+  color: #141313;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Optional: Smooth transition for hover effect */
+}
+
+.signup-container button:hover {
+  background-color: transparent;
+
+}

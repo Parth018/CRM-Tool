@@ -1,0 +1,114 @@
+.sales-automation-container {
+  
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sales-automation-container h2 {
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sales-automation-container p {
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.campaigns-section, .tasks-section {
+  margin-bottom: 20px;
+}
+
+.campaigns-section h3, .tasks-section h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.input-group input, .input-group select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.input-group .add-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.input-group .add-button:hover {
+  background-color: #0056b3;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+
+.list-item span {
+  font-size: 16px;
+  color: #333;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons .save-button, .buttons .delete-button {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttons .save-button {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.buttons .save-button:hover {
+  background-color: #218838;
+}
+
+.buttons .delete-button {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.buttons .delete-button:hover {
+  background-color: #c82333;
+}

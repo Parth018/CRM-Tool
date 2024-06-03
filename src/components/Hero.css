@@ -1,0 +1,36 @@
+/* Hero Section Styling */
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover; /* Background image covering the container */
+    color: #204e93; /* Blue color for text */
+    text-align: center; /* Center align text */
+    padding: 100px 0; /* Top and bottom padding */
+  }
+  
+  /* Hero Title Styling */
+  .hero h2 {
+    font-size: 2.5rem; /* Larger font size */
+    margin-bottom: 20px; /* Space at the bottom */
+  }
+  
+  /* Hero Description Styling */
+  .hero p {
+    font-size: 1.2rem; /* Slightly larger font size */
+    margin-bottom: 20px; /* Space at the bottom */
+  }
+  
+  /* Hero Button Styling */
+  .hero .btn {
+    background-color: #204e93; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Padding around the button text */
+    text-decoration: none; /* Remove default link decoration */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  /* Button Hover Effect */
+  .hero .btn:hover {
+    background-color: #183e7a; /* Darker blue on hover */
+    color: #fff; /* Maintain white text color */
+  }
+  

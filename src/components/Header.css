@@ -1,0 +1,78 @@
+/* Header Styling */
+header {
+  background-color: #333; /* Dark background */
+  color: #fff; /* White text */
+  padding: 1rem 0; /* Top and bottom padding */
+  display: flex;
+  justify-content: space-between; /* Align items to the ends */
+  align-items: center;
+  position: relative;
+}
+
+/* Shine Animation */
+@keyframes shine {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+/* Header Title Styling */
+header h1 {
+  margin: 0;
+  display: inline-block;
+  padding-left: 20px;
+  font-size: 36px;
+  font-weight: bold;
+  /* Gradient background with shine effect */
+  background: linear-gradient(90deg, #ff0000, #ff9900, #ffff00, #33cc33, #00ccff, #6600cc, #ff00ff);
+  background-size: 500%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 10s linear infinite;
+}
+
+/* Authentication Links */
+.auth-links {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  margin-top: 20px;
+}
+
+.auth-links a {
+  color: #fff; /* White color for links */
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+/* Navigation Styling */
+nav {
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #ffffff; /* White color for navigation links */
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ddd; /* Lighter color on hover */
+  transform: scale(1.1);
+}
