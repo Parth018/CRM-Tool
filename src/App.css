@@ -4,8 +4,9 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  float: right; /* Float the ul to the right */
+  float: right; /* Float the ---ul to the right */
 }
+
 
 nav ul li {
   /* display: inline-block; / / No need for this */
