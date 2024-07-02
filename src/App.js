@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Signup from './components/Signup';
-import Login from './pages/Login'; // Import the Login component
+
+import Login from './pages/Login'; 
 import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import LeadManagement from './pages/LeadManagement';
@@ -17,7 +17,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/signup" element={<Signup />} />
+      
         <Route path="/login" element={<Login />} /> {/* Add the login route */}
         <Route path="/Lead-Management" element={<LeadManagement />} />
         <Route path="/customer-database" element={<CustomerDatabase />} />

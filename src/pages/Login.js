@@ -1,61 +1,70 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './Login.css'; // Ensure this path is correct
+import './Login.css';
+function Login() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [isLogin, setIsLogin] = useState(true);
+  const [error, setError] = useState(null);
 
-const Login = () => {
-  const [formData, setFormData] = useState({
-    email: '',
-    password: '',
-  });
-
-  const navigate = useNavigate(); // Initialize useNavigate hook
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (isLogin) {
+      // TO DO: Implement login logic here
+      // For now, just console log the credentials
+      console.log(`Email: ${email}, Password: ${password}`);
+    } else {
+      // TO DO: Implement signup logic here
+      // For now, just console log the credentials
+      console.log(`Email: ${email}, Password: ${password}, Confirm Password: ${confirmPassword}`);
+    }
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Perform validation and login logic here
-    console.log('Form submitted', formData);
-    // After successful login, navigate to the HomePage
-    navigate('/');
+  const handleToggle = () => {
+    setIsLogin(!isLogin);
   };
 
   return (
-    <div className="login-container">
-      <h2>Login</h2>
+    <div className="login-signup-container">
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="password">Password:</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            value={formData.password}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <button type="submit">Login</button>
+        <h2>{isLogin ? 'Login' : 'Sign up'}</h2>
+        <label>Email:</label>
+        <input
+          type="email"
+          value={email}
+          onChange={(event) => setEmail(event.target.value)}
+          placeholder="Enter your email"
+        />
+        <br />
+        <label>Password:</label>
+        <input
+          type="password"
+          value={password}
+          onChange={(event) => setPassword(event.target.value)}
+          placeholder="Enter your password"
+        />
+        <br />
+        {!isLogin && (
+          <>
+            <label>Confirm Password:</label>
+            <input
+              type="password"
+              value={confirmPassword}
+              onChange={(event) => setConfirmPassword(event.target.value)}
+              placeholder="Confirm your password"
+            />
+            <br />
+          </>
+        )}
+        {error && <div style={{ color: 'red' }}>{error}</div>}
+        <button type="submit">{isLogin ? 'Login' : 'Sign up'}</button>
+        <p>
+          {isLogin ? 'Don\'t have an account? ' : 'Already have an account? '}
+          <span onClick={handleToggle}>{isLogin ? 'Sign up' : 'Login'}</span>
+        </p>
       </form>
     </div>
   );
-};
+}
 
 export default Login;

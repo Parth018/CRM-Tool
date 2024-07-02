@@ -2,89 +2,88 @@
 
 /* General Styles */
 .lead-management-container {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-  }
-  
-  .lead-management-title {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .lead-management-content {
-    font-size: 18px;
-  }
-  
-  /* Add Lead Form Styles */
-  .add-lead-form {
-    margin-bottom: 20px;
-  }
-  
-  .add-lead-form input[type="text"],
-  .add-lead-form select {
-    padding: 10px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  .add-lead-form button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .add-lead-form button[type="submit"]:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Lead List Styles */
-  .lead-list {
-    margin-top: 20px;
-  }
-  
-  .lead-list ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .lead-list ul li {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-  }
-  
-  /* Lead Item Button Styles */
-  .lead-list ul li button {
-    margin-left: 10px;
-    padding: 5px 10px;
-    background-color: #dc3545;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  /* Save Button Styles */
-  .lead-list ul li button.save-button {
-    background-color: #28a745;
-  }
-  
-  /* Button Hover Effect */
-  .lead-list ul li button:hover {
-    background-color: #c82333;
-  }
-  
-  /* Add more CSS styles as needed */
-  
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.lead-management-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.lead-management-content {
+  font-size: 18px;
+}
+
+/* Add Lead Form Styles */
+.add-lead-form {
+  margin-bottom: 20px;
+}
+
+.add-lead-form input[type="text"],
+.add-lead-form select {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.add-lead-form button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-lead-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Lead List Styles */
+.lead-list {
+  margin-top: 20px;
+}
+
+.lead-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.lead-list ul li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/* Lead Item Button Styles */
+.lead-list ul li button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Save Button Styles */
+.lead-list ul li button.save-button {
+  background-color: #28a745;
+}
+
+/* Button Hover Effect */
+.lead-list ul li button:hover {
+  background-color: #c82333;
+}
+
+/* Add more CSS styles as needed */
