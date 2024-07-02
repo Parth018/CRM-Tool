@@ -1,63 +1,58 @@
-.login-container {
-  max-width: 400px;
-  margin: 50px auto;
+.login-signup-container {
+  max-width: 300px;
+  margin: 40px auto;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(1, 2, 1, 0.8); /* Slightly reduce the shadow opacity */
-  background: linear-gradient(135deg, #530707, #096897, #283048, #790808);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.login-container h2 {
-  text-align: center;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px;
   margin-bottom: 20px;
-  color: #fff;
-  font-size: 24px; /* Adjust font size for better readability */
-}
-
-.login-container form {
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-}
-
-.login-container .form-group {
-  margin-bottom: 15px;
-  display: flex;
-  flex-direction: column;
-}
-
-.login-container label {
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #fff;
-  font-size: 14px; /* Adjust font size for better readability */
-}
-
-.login-container input {
-  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 16px;
-  width: 100%;
-  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
 
-.login-container button {
-  padding: 10px;
-  background-color: #f6f2f2;
-  color: #151414;
+input:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
-.login-container button:hover {
-  background-color: transparent; /* Change to a light grey for better visibility */
+button[type="submit"]:hover {
+  background-color: #3e8e41;
 }
 
-.login-container button:active {
-  background-color: #ccc; /* Change to a slightly darker grey on click */
+p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+p span {
+  color: #337ab7;
+  cursor: pointer;
+}
+
+p span:hover {
+  text-decoration: underline;
 }

@@ -1,0 +1,47 @@
+/* Apply styles to ensure elements fit the screen */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+  }
+  
+  /* Apply styles only to elements within the hero section */
+  .hero {
+    background: url('hero.jpg') no-repeat center center/cover; /* Background image covering the container */
+    color: #204e93; /* Blue color for text */
+    text-align: center; /* Center align text */
+    padding: 100px 0; /* Top and bottom padding */
+    height: 100vh; /* Set height to 100% of viewport height */
+    display: flex; /* Use flexbox for vertical alignment */
+    flex-direction: column; /* Align children vertically */
+    justify-content: center; /* Center vertically */
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem; /* Larger font size */
+    margin-bottom: 20px; /* Space at the bottom */
+  }
+  
+  .hero p {
+    font-size: 1.2rem; /* Slightly larger font size */
+    margin-bottom: 20px; /* Space at the bottom */
+  }
+  
+  .hero .btn {
+    background-color: #204e93; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Padding around the button text */
+    text-decoration: none; /* Remove default link decoration */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .hero .btn:hover {
+    background-color: #183e7a; /* Darker blue on hover */
+    color: #fff; /* Maintain white text color */
+  }
+  
+  /* Additional styles for other sections as needed */
+  
