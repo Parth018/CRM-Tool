@@ -64,13 +64,13 @@ const LeadManagement = () => {
             pattern="[A-Z]\d{3}" // Enforce pattern for one alphabet + three digits
             required
           />
-          <select value={newLeadStatus} onChange={(e) => setNewLeadStatus(e.target.value)}>
+          <select  className= "listvalue" value={newLeadStatus} onChange={(e) => setNewLeadStatus(e.target.value)}>
             <option value="New">New</option>
             <option value="Contacted">Contacted</option>
             <option value="Qualified">Qualified</option>
             <option value="Closed">Closed</option>
           </select>
-          <select value={newLeadPriority} onChange={(e) => setNewLeadPriority(e.target.value)}>
+          <select className= "listvalue" value={newLeadPriority} onChange={(e) => setNewLeadPriority(e.target.value)}>
             <option value="Low">Low</option>
             <option value="Medium">Medium</option>
             <option value="High">High</option>

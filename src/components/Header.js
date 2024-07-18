@@ -1,12 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Use Link for navigation
 import './Header.css'; // Ensure this path is correct
-
+// import '../components/relatio.png'
 const Header = () => {
   return (
     <header>
       <div className="container">
-        <h1>RELATIO</h1>
+         <h1>RELATIO</h1> 
+        {/* <div className='img'></div> */}
+        {/* <img  src='../components/relatio.png' title='relatio' alt='title' width="200" height="100"/> */}
+        {/* <img src=".." alt="Alternative text" width="200" height="100" aria-label="For screen readers" /> */}
         <div className="auth-links">
          
           <Link to="/login">login</Link>

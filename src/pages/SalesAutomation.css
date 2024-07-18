@@ -108,7 +108,35 @@
   background-color: #dc3545;
   color: #fff;
 }
+.listvalue{
+  text-align: justify;
+  height: 35px;
+  width: 183px;
+  margin: 10px;
 
+}
+.txtclr{
+  color: #555;
+}
+.listbtn{
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #eeeded;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.listvaluebtn{
+  text-align: center;
+  height: 35px;
+  width: 183px;
+  margin: 10px;
+  border: #fff;
+  background-color: #28a745;
+  cursor: pointer;
+}
 .buttons .delete-button:hover {
   background-color: #c82333;
 }
