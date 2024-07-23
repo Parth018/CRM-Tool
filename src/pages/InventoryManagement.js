@@ -72,7 +72,7 @@ const InventoryManagement = () => {
           value={newCar.model}
           onChange={e => setNewCar({ ...newCar, model: e.target.value })}
         />
-        <select
+        <select className='listvalue'
           value={newCar.year}
           onChange={e => setNewCar({ ...newCar, year: parseInt(e.target.value) })}
         >
@@ -90,7 +90,7 @@ const InventoryManagement = () => {
           value={newCar.price}
           onChange={e => setNewCar({ ...newCar, price: e.target.value })}
         />
-        <button onClick={addCar}>Add Car</button>
+        <button className='listvaluebtn' onClick={addCar}>Add Car</button>
       </div>
     </div>
   );

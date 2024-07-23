@@ -62,23 +62,26 @@ const SalesAutomation = () => {
           value={newCampaignName}
           onChange={(e) => setNewCampaignName(e.target.value)}
         />
-        <select value={campaignType} onChange={(e) => setCampaignType(e.target.value)}>
+        <select className='listvalue' value={campaignType} onChange={(e) => setCampaignType(e.target.value)}>
           <option value="Email Marketing">Email Marketing</option>
           <option value="Social Media">Social Media</option>
           <option value="PPC Advertising">PPC Advertising</option>
           <option value="Referral Program">Referral Program</option>
           <option value="Product Launch">Product Launch</option>
         </select>
-        <button onClick={addCampaign}>Add Campaign</button>
+        <button className='listvaluebtn' onClick={addCampaign}>Add Campaign</button>
+        <div className='listbtn'>
         <ul>
           {campaigns.map((campaign, index) => (
             <li key={index}>
-              {campaign.name} ({campaign.type})
+              <div className='txtclr'>{campaign.name} ({campaign.type})</div>
               <button onClick={() => saveCampaign(index)}>Save</button>
               <button onClick={() => deleteCampaign(index)}>Delete</button>
             </li>
           ))}
         </ul>
+        </div>
+        
       </div>
 
       <div className="tasks-section">
@@ -89,23 +92,25 @@ const SalesAutomation = () => {
           value={newTaskName}
           onChange={(e) => setNewTaskName(e.target.value)}
         />
-        <select value={taskType} onChange={(e) => setTaskType(e.target.value)}>
+        <select className='listvalue' value={taskType} onChange={(e) => setTaskType(e.target.value)}>
           <option value="Follow-Up Calls">Follow-Up Calls</option>
           <option value="Product Demos">Product Demos</option>
           <option value="Proposal Preparation">Proposal Preparation</option>
           <option value="Customer Onboarding">Customer Onboarding</option>
           <option value="Sales Training">Sales Training</option>
         </select>
-        <button onClick={addSalesTask}>Add Task</button>
+        <button className='listvaluebtn' onClick={addSalesTask}>Add Task</button>
+        <div className='listbtn'>
         <ul>
           {salesTasks.map((task, index) => (
             <li key={index}>
-              {task.name} ({task.type})
+              <div className='txtclr'>{task.name} ({task.type})</div>
               <button onClick={() => saveSalesTask(index)}>Save</button>
               <button onClick={() => deleteSalesTask(index)}>Delete</button>
             </li>
           ))}
         </ul>
+        </div>
       </div>
     </div>
   );

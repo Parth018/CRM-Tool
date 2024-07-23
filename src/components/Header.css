@@ -8,7 +8,12 @@ header {
   align-items: center;
   position: relative;
 }
-
+.img{
+  background:url(./relatio.png);
+  color: #204e93; /* Blue color for text */
+  
+  padding: 100px ; /* Top and bottom padding */
+}
 /* Shine Animation */
 @keyframes shine {
   0% {
@@ -27,7 +32,8 @@ header h1 {
   font-size: 36px;
   font-weight: bold;
   /* Gradient background with shine effect */
-  background: linear-gradient(90deg, #ff0000, #ff9900, #ffff00, #33cc33, #00ccff, #6600cc, #ff00ff);
+  background: white;
+  /* background: linear-gradient(90deg, #ff0000, #ff9900, #ffff00, #33cc33, #00ccff, #6600cc, #ff00ff); */
   background-size: 500%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -56,6 +56,12 @@
   list-style-type: none;
   padding: 0;
 }
+.listvalue{
+  text-align: justify;
+  height: 19px;
+  width: 183px;
+  margin-bottom: 10px;
+}
 
 .lead-list ul li {
   margin-bottom: 10px;
