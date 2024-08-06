@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import './Login.css';
+import React, { useState } from "react";
+import "./Login.css";
 function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [isLogin, setIsLogin] = useState(true);
   const [error, setError] = useState(null);
 
@@ -16,7 +16,9 @@ function Login() {
     } else {
       // TO DO: Implement signup logic here
       // For now, just console log the credentials
-      console.log(`Email: ${email}, Password: ${password}, Confirm Password: ${confirmPassword}`);
+      console.log(
+        `Email: ${email}, Password: ${password}, Confirm Password: ${confirmPassword}`
+      );
     }
   };
 
@@ -27,7 +29,7 @@ function Login() {
   return (
     <div className="login-signup-container">
       <form onSubmit={handleSubmit}>
-        <h2>{isLogin ? 'Login' : 'Sign up'}</h2>
+        <h2>{isLogin ? "Login" : "Sign up"}</h2>
         <label>Email:</label>
         <input
           type="email"
@@ -56,11 +58,11 @@ function Login() {
             <br />
           </>
         )}
-        {error && <div style={{ color: 'red' }}>{error}</div>}
-        <button type="submit">{isLogin ? 'Login' : 'Sign up'}</button>
+        {error && <div style={{ color: "red" }}>{setError}</div>}
+        <button type="submit">{isLogin ? "Login" : "Sign up"}</button>
         <p>
-          {isLogin ? 'Don\'t have an account? ' : 'Already have an account? '}
-          <span onClick={handleToggle}>{isLogin ? 'Sign up' : 'Login'}</span>
+          {isLogin ? "Don't have an account? " : "Already have an account? "}
+          <span onClick={handleToggle}>{isLogin ? "Sign up" : "Login"}</span>
         </p>
       </form>
     </div>
